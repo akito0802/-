@@ -1,0 +1,1344 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ジャズジャンル図鑑</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+    }
+    .filter {
+      margin-bottom: 20px;
+    }
+    .genre-card {
+      border: 1px solid #ccc;
+      background-color: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .genre-card:hover {
+      background-color: #f0f0f0;
+    }
+    .genre-details {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>ジャズジャンル図鑑</h1>
+
+  <div class="filter">
+    <label for="categoryFilter">カテゴリで絞り込む：</label>
+    <select id="categoryFilter" onchange="filterGenres()">
+      <option value="all">すべて表示</option>
+<option value="時代別ジャズ">時代別ジャズ</option>
+<option value="スタイル／奏法系">スタイル／奏法系</option>
+<option value="地域・国別ジャズ">地域・国別ジャズ</option>
+<option value="ジャンル融合／他音楽系">ジャンル融合／他音楽系</option>
+<option value="楽器別・編成別">楽器別・編成別</option>
+<option value="雰囲気・用途別">雰囲気・用途別</option>
+    </select>
+  </div>
+
+  <div id="genreList">
+
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ディキシーランド</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>スウィング</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ビバップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ハードバップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>クールジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ポストバップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ネオバップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>モーダルジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>コンテンポラリージャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>レトロジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ニューオリンズジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ラグタイム</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>戦後ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>60年代モダン</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>70年代ジャズロック</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>80年代スムース</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>90年代コンテンポラリー</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>2000年代以降ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>リヴァイバルジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ヴィンテージジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>フューチャージャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>レトロフューチャー・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>クラシック・ジャズリバイバル</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>令和ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>21世紀ビバップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ミレニアム・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>ポストモダン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>近未来ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>戦前ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="時代別ジャズ" onclick="toggleDetails(this)">
+      <strong>1920sジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>フュージョン</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>ジャズファンク</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>ジャズロック</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>ストレートアヘッド</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>アヴァンギャルド・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>フリージャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>サードストリーム</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>チルジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>Lo-fiジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>アウトプレイ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>実験音楽ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>即興ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>ドローンジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>構造派ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>スピリチュアル・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>12音技法ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>無調ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>ミニマルジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>パーカッシブ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>変拍子ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>バップ・バトルジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>オルタナティブ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>スウィート・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>アコースティック・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>エレクトリック・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>サイケデリック・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>シネマティック・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>シリアス・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>デコンストラクティブ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="スタイル／奏法系" onclick="toggleDetails(this)">
+      <strong>マス・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ボサノバ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>サンバジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>アフロ・キューバン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>メキシカン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>タンゴ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>イタリアン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>フレンチ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>北欧ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ポーランド・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>中東ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ブラジリアン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ショーロジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ペルージャ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ドイツ・アヴァンジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>スペイン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>南アフリカ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>エチオピアン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>韓国ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>中国ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>タイジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>アメリカ南部ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>カナディアン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>オーストラリア・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>中南米ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ロシア・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>インドネシア・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>フィリピン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>インド・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>アラビアン・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="地域・国別ジャズ" onclick="toggleDetails(this)">
+      <strong>ウクライナ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ヒップホップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・クラシック</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ポップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・メタル</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・レゲエ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・EDM</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・アニソン</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ゲーム音楽</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ボカロ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>VTuberジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・フォーク</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・R&B</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ソウル</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ハウス</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ドラムンベース</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・テクノ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・トラップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・アンビエント</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ロックンロール</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・カントリー</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・グランジ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・ニューウェーブ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・シティポップ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・K-POP</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・J-POP</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・民謡</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・伝統音楽</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・童謡</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・演歌</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="ジャンル融合／他音楽系" onclick="toggleDetails(this)">
+      <strong>ジャズ・歌謡曲</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ピアノトリオ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ギタージャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>サックス・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>トランペットジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>オルガンジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ストリングス・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ドラム主導ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ベースソロ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ヴォーカルジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ノードラム・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>トリオジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>カルテットジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ビッグバンド</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>デュオジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ソロピアノ・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ホーンセクションジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>フルートジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>バイオリンジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>クラリネットジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>電子楽器ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>和楽器ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ハープジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>リコーダージャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>カリンバジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ウクレレジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>三味線ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>尺八ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>鍵盤ハーモニカジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>ビブラフォンジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="楽器別・編成別" onclick="toggleDetails(this)">
+      <strong>マリンバジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>夜景ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>カフェジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>雨の日ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>哀愁ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>陽気ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>ストリート・ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>映画音楽ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>教会系ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>学園祭ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>結婚式用ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>深夜系ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>朝のジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>通勤ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>集中用ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>睡眠用ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>エロティックジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>ダークジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>光のジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>影のジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>旅するジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>田舎のジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>都会のジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>山のジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>海辺のジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>温泉ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>宇宙ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>地下室ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>教室ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>病院ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+    <div class="genre-card" data-category="雰囲気・用途別" onclick="toggleDetails(this)">
+      <strong>居酒屋ジャズ</strong>
+      <div class="genre-details">
+        <p><em>このジャンルの詳細はまだ準備中です。</em></p>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    function filterGenres() {
+      const selected = document.getElementById("categoryFilter").value;
+      const cards = document.querySelectorAll(".genre-card");
+      cards.forEach(card => {
+        if (selected === "all" || card.dataset.category === selected) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+
+    function toggleDetails(card) {
+      const details = card.querySelector(".genre-details");
+      if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+      } else {
+        details.style.display = "none";
+      }
+    }
+
+    // 初期表示
+    window.onload = () => filterGenres();
+  </script>
+</body>
+</html>
